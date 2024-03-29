@@ -1,0 +1,28 @@
+public class Student extends Person {
+
+    private String name;
+
+    public Student(String name, float cm, float kg) {
+        this.name = name;
+        super.setCm(cm);
+        super.setKg(kg);
+    }
+
+    public void printlntro() {
+        System.out.println(name + "의 키는 " + getCm() + "이고, 몸무게는 "
+                + getKg() + "이므로 BMI수치는 " + getBMI() + "입니다.");
+    }
+
+    @Override
+    public void say() {
+        System.out.println("안녕");
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+}
