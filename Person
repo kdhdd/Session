@@ -1,0 +1,29 @@
+public class Person {
+
+    private float cm;
+    private float kg;
+
+    public float getBMI() {
+        return kg / ((cm / 100) * (cm / 100));
+    }
+
+    public void say() {
+        System.out.println("응애");
+    }
+
+    public float getCm() {
+        return cm;
+    }
+
+    public void setCm(float cm) {
+        this.cm = cm;
+    }
+
+    public float getKg() {
+        return kg;
+    }
+
+    public void setKg(float kg) {
+        this.kg = kg;
+    }
+}
